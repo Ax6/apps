@@ -20,6 +20,10 @@ When you record a time-lapse, Tracewell saves the video to your Photos library. 
 
 The unlock is sold through the App Store. Apple handles the payment, and Tracewell only learns whether the unlock is active.
 
+## Keeping and deleting your data
+
+Everything Tracewell stores stays on your iPhone until you delete it. Deleting a tracing in the app removes it, and deleting the app removes all of them. Time-lapses you saved stay in Photos until you delete them there. To take back camera or Photos access, go to Settings, then Apps, then Tracewell.
+
 ## Children
 
 Tracewell collects nothing from anyone, children included.
