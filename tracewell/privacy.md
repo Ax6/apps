@@ -1,0 +1,33 @@
+# Tracewell privacy policy
+
+Last updated October 13, 2026
+
+Tracewell doesn't collect any data. It has no account, no ads, no analytics and no tracking, and it doesn't send anything to us or to anyone else.
+
+## The camera
+
+Tracewell uses the camera to show your photo on your paper. What the camera sees is processed on your iPhone and never leaves it, and nothing is recorded unless you start a time-lapse.
+
+## Your photos
+
+You pick photos with the iOS photo picker or from Files, and Tracewell sees only the ones you choose. Your tracings and their settings are stored on your iPhone, and deleting the app deletes them.
+
+## Time-lapses
+
+When you record a time-lapse, Tracewell saves the video to your Photos library. It asks for permission to add to Photos and can't see the rest of your library.
+
+## Purchases
+
+The unlock is sold through the App Store. Apple handles the payment, and Tracewell only learns whether the unlock is active.
+
+## Children
+
+Tracewell collects nothing from anyone, children included.
+
+## Changes
+
+If this policy changes, the new version will be posted on this page with a new date.
+
+## Contact
+
+Email [tracewell@icloud.com](mailto:tracewell@icloud.com) with any questions.
