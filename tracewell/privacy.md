@@ -34,4 +34,4 @@ If this policy changes, the new version will be posted on this page with a new d
 
 ## Contact
 
-Email [tracewell@icloud.com](mailto:tracewell@icloud.com) with any questions.
+Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with any questions.

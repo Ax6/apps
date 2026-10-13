@@ -1,6 +1,6 @@
 # Tracewell support
 
-Email [tracewell@icloud.com](mailto:tracewell@icloud.com) and say which iPhone you have. A screenshot helps if something looks wrong.
+Email [floorapps@icloud.com](mailto:floorapps@icloud.com) and say which iPhone you have. A screenshot helps if something looks wrong.
 
 ## Common questions
 
