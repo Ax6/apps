@@ -1,6 +1,6 @@
 # Plinth privacy policy
 
-Last updated October 27, 2026
+Last updated October 29, 2026
 
 Plinth doesn't collect any data. It has no account, no ads, no analytics and no tracking, and it doesn't send anything to us or to anyone else.
 
@@ -26,7 +26,7 @@ The unlock is sold through the App Store. Apple handles the payment, and Plinth 
 
 ## Keeping and deleting your data
 
-Everything Plinth stores stays on your iPhone until you delete it. Deleting an item in Plinth removes its photos, and Delete exported items in Settings removes every item whose photos have all been exported. Deleting the app removes everything Plinth stored. If you back up your iPhone, the backup includes Plinth's data, as it does for your other apps. Photos you exported stay in your Photos library, or wherever you shared them, until you delete them there. To take back camera or Photos access, go to Settings, then Apps, then Plinth.
+Everything Plinth stores stays on your iPhone until you delete it. Items and photos you delete in Plinth wait in Recently deleted for 30 days, then Plinth removes them for good. Delete exported items in Settings removes items whose photos you've all saved or shared for good right away, to free space. Deleting the app removes everything Plinth stored. If you back up your iPhone, the backup includes Plinth's data, as it does for your other apps. Photos you exported stay in your Photos library, or wherever you shared them, until you delete them there. To take back camera or Photos access, go to Settings, then Apps, then Plinth.
 
 ## Children
 
