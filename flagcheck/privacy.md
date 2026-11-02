@@ -30,7 +30,7 @@ The unlock is sold through the App Store. Apple handles the payment, and Flagche
 
 ## Keeping and deleting your data
 
-Everything Flagcheck stores stays on your iPhone until you delete it. Delete a reading by swiping it in the Log, or from the reading itself. Delete a field or a team from its edit screen. A deleted field takes its teams with it, and its readings stay in the log until you delete them. Deleting the app removes everything Flagcheck stored. If you back up your iPhone, the backup includes Flagcheck's data, as it does for your other apps. Exports you shared stay wherever you sent them. To take back location access or turn off reminders, go to Settings, then Apps, then Flagcheck.
+Everything Flagcheck stores stays on your iPhone until you delete it. Delete a reading by swiping it in Readings, or from the reading itself. Delete a field or a practice from its edit screen. A deleted field takes its practices with it, and its readings stay in the log until you delete them. Deleting the app removes everything Flagcheck stored. If you back up your iPhone, the backup includes Flagcheck's data, as it does for your other apps. Exports you shared stay wherever you sent them. To take back location access or turn off reminders, go to Settings, then Apps, then Flagcheck.
 
 ## Children
 
