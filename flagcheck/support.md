@@ -28,7 +28,7 @@ Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with Flagcheck in the 
 
 **Which field does a widget show?** The one open in Flagcheck. To pin a widget to one field, press and hold it, tap Edit Widget and pick the field.
 
-**What's free?** The flag for one field, hour by hour today. The unlock, paid once, adds more fields, the week ahead, reminders, the log and its exports, the meter adjustment and the widgets.
+**What's free?** The flag for one field, hour by hour today. The unlock, paid once, adds more fields, the week ahead, reminders, the Lock Screen countdown, the log and its exports, the meter adjustment and the widgets.
 
 **I bought the unlock on another iPhone.** Tap the gear on Today, then Restore purchase. Family Sharing is included.
 
