@@ -18,7 +18,7 @@ Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with Surtitle in the s
 
 **Can I keep a transcript?** Every talk is saved in Recent. Open one and tap Share to send it as a PDF or as text.
 
-**What's free?** Three full talks, with every feature. A talk counts once it passes two minutes, so a quick try doesn't use one up. After that you pay once to keep starting talks, and you can always read, search and share the ones you have.
+**What's free?** Three full talks, with every feature. A talk counts once it passes two minutes, so a quick try doesn't use one up. Shorter tries are free until they add up to ten minutes. After that you pay once to keep starting talks, and you can always read, search and share the ones you have.
 
 **I bought Surtitle on another device.** Tap ⓘ, then Restore purchase. Family Sharing is included.
 

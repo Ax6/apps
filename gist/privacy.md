@@ -16,7 +16,7 @@ The speech and translation languages you choose are downloaded by iOS from Apple
 
 ## What Surtitle keeps
 
-Each talk is saved on your device as text: its title, date, length and languages, and each line's time, original, translation and whether you marked it. Surtitle also keeps your lists of words to expect and your settings, such as your languages, the text size and how many free talks you've used.
+Each talk is saved on your device as text: its title, date, length and languages, and each line's time, original, translation and whether you marked it. Surtitle also keeps your lists of words to expect and your settings, such as your languages, the text size how many free talks you've used and how long your short tries ran.
 
 While you listen, the newest line also shows on the Lock Screen and in the Dynamic Island, where anyone who can see your iPhone can read it. It goes away when you tap Done.
 
@@ -34,7 +34,7 @@ The unlock is sold through the App Store. Apple handles the payment, and Surtitl
 
 ## Keeping and deleting your data
 
-Everything Surtitle stores stays on your device until you delete it. To delete a talk, swipe it to the left in Recent, or open it and choose Delete from its menu. Swipe a word list to the left to delete it. Deleting the app removes everything Surtitle stored. If you back up your device, the backup includes Surtitle's talks, as it does for your other apps.
+Everything Surtitle stores stays on your device until you delete it. To delete a talk, swipe it to the left in Recent, or open it and choose Delete from its menu. Swipe a word list to the left to delete it. Deleting the app removes everything Surtitle stored, except the count of free talks used and short tries, which stays in your device's keychain so the free talks aren't given back. It's two numbers and nothing else. If you back up your device, the backup includes Surtitle's talks, as it does for your other apps.
 
 To take back microphone or speech recognition access, go to Settings, then Apps, then Surtitle. Surtitle can't caption anything without the microphone.
 
