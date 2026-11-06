@@ -1,5 +1,6 @@
 # Apps
 
+- Billstamp: [privacy](duly/privacy) · [support](duly/support)
 - Costos: [privacy](costos/privacy) · [support](costos/support) · [privacidad](costos/privacidad) · [soporte](costos/soporte)
 - Flagcheck: [privacy](flagcheck/privacy) · [support](flagcheck/support)
 - Plinth: [privacy](plinth/privacy) · [support](plinth/support)
