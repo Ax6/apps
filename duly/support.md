@@ -4,7 +4,7 @@ Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with Billstamp in the 
 
 ## Common questions
 
-**What's free?** Everything, until three invoices have gone out. Estimates, receipts, reminders, resending an invoice, payments, exports and iCloud never count. After that, Billstamp Unlimited sends as many invoices as you like, for every business you run. You pay once, with no subscription, and nothing you've made ever locks.
+**What's free?** Everything, until three invoices have gone out. Estimates, receipts, reminders, resending an invoice, payments, exports and iCloud never count, and deleting a sent invoice doesn't give a free one back. After that, Billstamp Unlimited sends as many invoices as you like, for every business you run. You pay once, with no subscription, and nothing you've made ever locks.
 
 **How does an invoice go out?** Open it and tap Send. Billstamp uses Mail when the customer has an email, Messages when they only have a phone number, and the share sheet otherwise, with a short note written for them and the PDF attached. To send it another way, like WhatsApp, tap Share at the top of the invoice.
 

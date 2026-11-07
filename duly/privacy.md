@@ -38,7 +38,7 @@ Billstamp Unlimited is sold through the App Store. Apple handles the payment, an
 
 ## Keeping and deleting your data
 
-Everything stays until you delete it. Deleting an invoice, estimate, payment or price list item in Billstamp also deletes it from your other devices through iCloud. A customer, or a second business, can be deleted once it has no invoices or estimates, so your records keep their names. Deleting the app removes what Billstamp stored on your device, and the copy in iCloud stays until you delete it: in the Settings app, tap your name, then iCloud, open your iCloud storage and choose Billstamp. If you back up your iPhone, the backup includes Billstamp's data, as it does for your other apps.
+Everything stays until you delete it. Deleting an invoice, estimate, payment or price list item in Billstamp also deletes it from your other devices through iCloud. A customer, or a second business, can be deleted once it has no invoices or estimates, so your records keep their names. Deleting the app removes what Billstamp stored on your device, except how many free invoices have been used, which stays in your keychain so they aren't given back. It's one number and nothing else, and iCloud Keychain carries it to your other devices if it's on. The copy in iCloud stays until you delete it: in the Settings app, tap your name, then iCloud, open your iCloud storage and choose Billstamp. If you back up your iPhone, the backup includes Billstamp's data, as it does for your other apps.
 
 To stop syncing, turn Billstamp off in the list of apps that use iCloud, under your name and iCloud in the Settings app. To turn notifications off, go to Settings, then Apps, then Billstamp, then Notifications.
 
