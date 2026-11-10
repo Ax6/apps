@@ -6,3 +6,4 @@
 - Plinth: [privacy](plinth/privacy) · [support](plinth/support)
 - Surtitle: [privacy](gist/privacy) · [support](gist/support)
 - Tracewell: [privacy](tracewell/privacy) · [support](tracewell/support)
+- Woodblock: [privacy](tactus/privacy) · [support](tactus/support)
