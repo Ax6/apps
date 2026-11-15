@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Woodblock lesson</title>
+<meta property="og:title" content="A Woodblock lesson">
+<meta property="og:description" content="This week’s pieces, ready to play in Woodblock.">
+<meta property="og:image" content="https://ax6.github.io/apps/tactus/lesson/icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root {
+    --teak: #9A5B2E; --on-teak: #fff;
+    --ink: #1c1b1a; --soft: #6b6762; --line: #e4ded6;
+    --page: #f6f2ec; --card: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --teak: #D9935A; --on-teak: #2A1407;
+      --ink: #f2efea; --soft: #a39d95; --line: #3a3632;
+      --page: #141210; --card: #1f1c19;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: max(28px, env(safe-area-inset-top)) 20px 40px; }
+  .app { display: flex; align-items: center; gap: 10px; color: var(--soft); font-size: 15px; font-weight: 600; }
+  .app img { width: 32px; height: 32px; border-radius: 8px; }
+  h1 { font-size: 30px; line-height: 1.15; margin: 18px 0 6px; letter-spacing: -0.01em; }
+  .who { color: var(--soft); margin: 0; }
+  .open {
+    display: block; margin: 24px 0 10px; padding: 15px; border-radius: 999px; text-align: center;
+    background: var(--teak); color: var(--on-teak); font-weight: 600; text-decoration: none;
+  }
+  .get { display: block; text-align: center; color: var(--teak); text-decoration: none; font-size: 15px; }
+  ol { list-style: none; margin: 32px 0 0; padding: 0; counter-reset: piece; }
+  li {
+    counter-increment: piece; position: relative;
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 16px 18px 16px 52px; margin-bottom: 10px;
+  }
+  li::before {
+    content: counter(piece); position: absolute; left: 20px; top: 16px;
+    color: var(--soft); font-variant-numeric: tabular-nums;
+  }
+  .name { font-weight: 600; }
+  .detail { color: var(--soft); font-size: 15px; margin-top: 2px; }
+  .detail span { white-space: nowrap; }
+  .note { margin: 10px 0 0; padding-left: 12px; border-left: 3px solid var(--teak); white-space: pre-wrap; }
+  .problem { margin-top: 40px; }
+  .problem h1 { font-size: 24px; }
+  footer { margin-top: 32px; color: var(--soft); font-size: 13px; text-align: center; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <div class="app"><img src="icon.png" alt="">Woodblock</div>
+  <div id="lesson" hidden>
+    <h1 id="title"></h1>
+    <p class="who" id="who"></p>
+    <a class="open" id="open">Open in Woodblock</a>
+    <a class="get" href="https://apps.apple.com/app/id6832574419">Don’t have Woodblock? Get it on the App Store</a>
+    <ol id="pieces"></ol>
+  </div>
+  <div class="problem" id="problem" hidden>
+    <h1 id="problem-title"></h1>
+    <p class="who" id="problem-text"></p>
+  </div>
+  <footer>The whole lesson is in the link. Nothing is sent to us or kept anywhere.<br><a href="../privacy">Privacy policy</a> · <a href="../support">Support</a></footer>
+</main>
+<script>
+// A lesson link is this page, then after the # the format's version, a point, and the lesson as JSON, deflated, in
+// base64url, as Woodblock writes it. A piece leaves out what's the default: no subdivision, Woodblock, no count-in.
+const version = 1;
+const sounds = { woodblock: "Woodblock", tick: "Tick", clave: "Clave", sideStick: "Side stick", cowbell: "Cowbell", beep: "Beep", spoken: "Spoken count" };
+const countIns = { oneBar: "One-bar count-in", twoBars: "Two-bar count-off" };
+
+async function read(fragment) {
+  const point = fragment.indexOf(".");
+  const written = Number(fragment.slice(0, point));
+  if (point < 1 || !Number.isInteger(written)) throw "damaged";
+  if (written > version) throw "newer";
+  let text = fragment.slice(point + 1).replace(/-/g, "+").replace(/_/g, "/");
+  text += "===".slice((text.length + 3) % 4);
+  const bytes = Uint8Array.from(atob(text), c => c.charCodeAt(0));
+  const json = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate-raw"))).text();
+  const lesson = JSON.parse(json);
+  const pieces = Array.isArray(lesson?.pieces) ? lesson.pieces.filter(piece => piece && typeof piece === "object") : [];
+  if (pieces.length === 0) throw "damaged";
+  return { ...lesson, pieces };
+}
+
+function bars(count) {
+  return count === 1 ? "1 bar" : count + " bars";
+}
+
+function words(value) {
+  return typeof value === "string" ? value.trim() : "";
+}
+
+function detail(piece) {
+  const tempo = Number(piece.tempo) || 120;
+  const parts = [tempo.toLocaleString(undefined, { maximumFractionDigits: 1 }) + " BPM", words(piece.meter) || "4/4"];
+  const subdivision = words(piece.subdivision);
+  if (subdivision && subdivision !== "none") parts.push(subdivision[0].toUpperCase() + subdivision.slice(1));
+  parts.push(sounds[piece.sound] || "Woodblock");
+  if (countIns[piece.countIn]) parts.push(countIns[piece.countIn]);
+  if (Number.isInteger(piece.bars) && piece.bars > 0) parts.push(bars(piece.bars));
+  const trainer = piece.trainer;
+  if (trainer && typeof trainer === "object") {
+    parts.push(trainer.kind === "gap"
+      ? `Gap trainer, ${bars(trainer.play ?? 2)} on and ${trainer.mute ?? 2} muted`
+      : `Speed trainer, ${trainer.start ?? 84} to ${trainer.target ?? 120} BPM`);
+  }
+  const line = element("div", "detail");
+  parts.forEach((part, index) => line.append(index ? " · " : "", element("span", "", part)));
+  return line;
+}
+
+function element(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text) node.textContent = text;
+  return node;
+}
+
+function problem(title, text) {
+  document.getElementById("lesson").hidden = true;
+  document.getElementById("problem-title").textContent = title;
+  document.getElementById("problem-text").textContent = text;
+  document.getElementById("problem").hidden = false;
+}
+
+async function show() {
+  const fragment = location.hash.slice(1);
+  if (!fragment) return problem("No lesson in this link", "Ask your teacher to send the lesson again.");
+  document.getElementById("open").href = "com.aaronrusso.tactus://lesson#" + fragment;
+  if (typeof DecompressionStream === "undefined") {
+    document.getElementById("title").textContent = "A Woodblock lesson";
+    document.getElementById("who").textContent = "This browser can’t show it, but Woodblock can.";
+    document.getElementById("lesson").hidden = false;
+    return;
+  }
+  let lesson;
+  try {
+    lesson = await read(fragment);
+  } catch (error) {
+    if (error === "newer") return problem("This lesson needs a newer Woodblock", "Update Woodblock from the App Store, then open the link again.");
+    return problem("This lesson link is cut short", "Part of it went missing when it was copied. Ask your teacher to send it again.");
+  }
+  const from = words(lesson.from), to = words(lesson.for);
+  document.getElementById("title").textContent = words(lesson.name) || "Lesson";
+  document.getElementById("who").textContent =
+    from && to ? `From ${from}, for ${to}` : from ? `From ${from}` : to ? `For ${to}` : "";
+  const list = document.getElementById("pieces");
+  list.replaceChildren(...lesson.pieces.map(piece => {
+    const item = element("li");
+    item.append(element("div", "name", words(piece.name) || "Piece"), detail(piece));
+    if (words(piece.note)) item.append(element("p", "note", words(piece.note)));
+    return item;
+  }));
+  document.title = (words(lesson.name) || "Lesson") + " · Woodblock";
+  document.getElementById("problem").hidden = true;
+  document.getElementById("lesson").hidden = false;
+}
+
+addEventListener("hashchange", show);
+show();
+</script>
+</body>
+</html>
