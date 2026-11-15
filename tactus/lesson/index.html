@@ -77,7 +77,8 @@
 </main>
 <script>
 // A lesson link is this page, then after the # the format's version, a point, and the lesson as JSON, deflated, in
-// base64url, as Woodblock writes it. A piece leaves out what's the default: no subdivision, Woodblock, no count-in.
+// base64url, as Woodblock writes it. A piece leaves out what's the default: no subdivision, Woodblock, no count-in,
+// no listening.
 const version = 1;
 const sounds = { woodblock: "Woodblock", tick: "Tick", clave: "Clave", sideStick: "Side stick", cowbell: "Cowbell", beep: "Beep", spoken: "Spoken count" };
 const countIns = { oneBar: "One-bar count-in", twoBars: "Two-bar count-off" };
@@ -119,6 +120,7 @@ function detail(piece) {
       ? `Gap trainer, ${bars(trainer.play ?? 2)} on and ${trainer.mute ?? 2} muted`
       : `Speed trainer, ${trainer.start ?? 84} to ${trainer.target ?? 120} BPM`);
   }
+  if (piece.listens === true) parts.push("Listening");
   const line = element("div", "detail");
   parts.forEach((part, index) => line.append(index ? " · " : "", element("span", "", part)));
   return line;
