@@ -1,6 +1,6 @@
 # Raincard privacy policy
 
-Last updated November 15, 2026
+Last updated November 16, 2026
 
 Raincard doesn't collect any data. It has no account, no ads, no analytics and no tracking, and it doesn't send anything to us.
 
@@ -12,7 +12,7 @@ To show how much rain fell at a place, Raincard sends that place's map coordinat
 - the National Weather Service at api.weather.gov, for the forecast,
 - the Applied Climate Information System at data.rcc-acis.org, which NOAA's Regional Climate Centers run, for the daily record, the gauges nearby and the normals.
 
-Raincard asks them when you add a place or move its pin, when you open Raincard and a place's numbers are over an hour old, when you pull down to refresh, and when iOS lets it refresh in the background. With Unlimited, opening a day sends a box around the place to look for gauges nearby. The map sends the area on screen to draw the rain, and a spot you tap to get its total.
+Raincard asks them when you add a place or move its pin, when you open Raincard and a place's numbers are over an hour old, when you pull down to refresh, and when iOS lets it refresh in the background. Opening a day sends a box around the place to look for gauges nearby. The map sends the area on screen to draw the rain, and a spot you tap to get its total.
 
 Nothing about you or your gauge readings goes with these requests, though like any website these services see your iPhone's internet address. They're run by or for NOAA, a US government agency, and what the Weather Service keeps from these requests is covered by the [NWS privacy policy](https://www.weather.gov/privacy).
 

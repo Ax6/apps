@@ -4,9 +4,11 @@ Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with Raincard in the s
 
 ## Common questions
 
-**Why doesn't Raincard match my gauge?** Raincard's numbers are NOAA's estimates for the spot under your pin, and rain often differs a lot across a few miles. With Unlimited, tap a day to see what the gauges nearby read, and tap Enter your gauge reading to make that day your number, on the card and in every total.
+**Why doesn't Raincard match my gauge?** Raincard's numbers are NOAA's estimates for the spot under your pin, and rain often differs a lot across a few miles. Tap a day to see the range the gauges nearby read. With Unlimited, the day lists each gauge, and Enter your gauge reading makes that day your number, on the card and in every total.
 
 **Why is today's number different from the last 24 hours?** The last 24 hours is radar, up to the latest hour. A day runs from about 7 AM to 7 AM, the way gauge readers count it, and its number comes from NOAA's gauge-checked daily record.
+
+**The radar's last 72 hours say less rain than the card.** Radar alone can miss rain, and a single gauge can read high, so the two sometimes disagree by more than a little. When they do, Totals for 1 to 72 hours says so and opens the day, where the gauges nearby show which to believe.
 
 **Why did yesterday's number change?** The newest day starts as a first estimate from NOAA's River Forecast Centers. When the Climate Centers publish the day, their settled estimate replaces it, and tapping the day shows what it was first written as. Hawaii has no first estimate, so its newest day has no number until the Climate Centers publish it.
 
@@ -26,7 +28,7 @@ Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with Raincard in the s
 
 **Which place does a widget show?** Rain at a place shows your first place until you choose another: press and hold the widget, tap Edit Widget and pick the place. Rain at your places shows your first four places, or two on the Lock Screen, in the order they're in on Places. To reorder them, drag a place, or press and hold it and tap Move up or Move down. Widgets show what Raincard last fetched and change when Raincard gets new numbers.
 
-**What's free?** One place, with its last 72 hours, the last 30 days, this year's card, the morning note and the small widget. Raincard Unlimited, paid once, adds every place, every year back to 1951 with the PDF and CSV, the gauges nearby, your own gauge, this week's watering, the map and every widget.
+**What's free?** One place, with its last 72 hours, the last 30 days, this year's card, the range the gauges nearby read on a day, the morning note and the small widget. Raincard Unlimited, paid once, adds every place, every year back to 1951 with the PDF and CSV, each gauge nearby, your own gauge, this week's watering, the map and every widget.
 
 **I bought Unlimited on another iPhone.** Open Settings in Raincard and tap Restore purchase. Family Sharing is included.
 
