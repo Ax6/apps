@@ -4,7 +4,7 @@ Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with Woodblock in the 
 
 ## Common questions
 
-**What's free?** The whole metronome: every time signature, subdivision and sound, tap tempo, the flash, haptics, headphone sync, the Lock Screen, Control Center, Siri and the Shortcuts app. Opening a lesson from a teacher and playing its pieces is free too. Woodblock Practice adds the speed and gap trainers, listening, songs and setlists that sync between your devices, sending lessons, and the practice log with its widgets. You pay once, with no subscription, and Family Sharing is included.
+**What's free?** The whole metronome: every time signature, subdivision and sound, tap tempo, the flash, haptics, headphone sync, the Lock Screen, Control Center, Siri and the Shortcuts app. Listening, which shows how many BPM faster or slower than the click you play, and opening a lesson from a teacher and playing its pieces are free too. Woodblock Practice adds My Recordings, where you play back each run Woodblock listened to and see where your tempo drifted, the speed and gap trainers, songs and setlists that sync between your devices, sending lessons, and the practice log with its widgets. You pay once, with no subscription, and Family Sharing is included.
 
 **The lit beat and the flash land late on my AirPods.** Bluetooth headphones play the click late. Tap the gear on the metronome, then Headphone sync, and tap along with 16 clicks. Woodblock keeps the delay for that pair and uses it whenever they're connected.
 
@@ -22,7 +22,9 @@ Email [floorapps@icloud.com](mailto:floorapps@icloud.com) with Woodblock in the 
 
 **The lesson link says it's cut short.** Part of the link went missing when it was copied, which happens in some emails and chats. Send it again, or let the student scan the code.
 
-**Why does Woodblock ask for the microphone?** Only for listening, part of Woodblock Practice, which shows where your notes land against the beat. It asks the first time you turn listening on. The sound is worked out in memory and never recorded or sent, as the [privacy policy](privacy) says. If you said no, Woodblock offers Turn it on in Settings, or you can turn Woodblock on under Privacy & Security, then Microphone, in the Settings app.
+**Why does Woodblock ask for the microphone?** For listening, which shows how many BPM faster or slower than the click you play. It asks the first time you turn on Listen, the ear at the top of the metronome. While Listen is on, Woodblock records what the microphone hears and keeps it on your device, never sent to us or to iCloud, as the [privacy policy](privacy) says. If you said no, Woodblock offers Turn it on in Settings, or you can turn Woodblock on under Privacy & Security, then Microphone, in the Settings app.
+
+**Where are my recordings?** With Woodblock Practice, in Practice under My Recordings, where you can play, rename, share and delete each one. Without it, Practice shows how many are kept and lets you delete them all. Turn off Listen to stop recording.
 
 **Which instruments does listening hear best?** Ones whose notes start sharply, like piano, guitar or drums. Bowed, sung and blown notes start softly and read less exactly, and music from another app or another player in the room is heard too. With Bluetooth headphones, Woodblock can't hear its own click to time it, so run Headphone sync first.
 
